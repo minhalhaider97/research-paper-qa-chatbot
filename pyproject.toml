@@ -1,0 +1,33 @@
+[project]
+name = "raglearn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Minhal Haider", email = "minhalhaider97@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.0",
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.6.2",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.11",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+    "typesense>=2.0.0",
+]
+
+[project.scripts]
+raglearn = "raglearn:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
